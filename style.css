@@ -3,6 +3,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .quicksand {
@@ -63,6 +64,10 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-icon:hover{
+  background-color: #01ACFD;
 }
 
 .black{
@@ -317,6 +322,9 @@ ul {
   .section-padding{
     padding: 40px 0px;
   }
+  .section-margin{
+    margin: 0;
+  }
   /* Navbar */
   .navbar h3,.nav-link,.navbar button{
     display: none;
@@ -385,4 +393,8 @@ ul {
     left: 10%;
     top: 35%;
   }
+}
+
+.hidden{
+  display: none;
 }
