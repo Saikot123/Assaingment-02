@@ -199,6 +199,10 @@ ul {
   font-weight: normal;
 }
 
+main{
+  background-image: url("./assets/bg.png");
+}
+
 /* Currriculam */
 
 .curriculam-container{
@@ -227,6 +231,11 @@ ul {
 }
 
 /* Our Stories */
+
+.stories{
+  /* background-image: linear-gradient(to up,rgba(254, 163, 1, 1),rgba(255, 255, 255, 1)); */
+  background-image: linear-gradient(0deg, rgba(254, 163, 1, 0.4), rgba(255, 255, 255, 1));
+}
 
 .stories-container{
   display: flex;
@@ -269,7 +278,6 @@ ul {
 .story-card1,.story-card2,.story-card3,.story-card4,.story-card5{
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  background-color: #01ACFD;
   position: relative;
 }
 
@@ -315,15 +323,78 @@ ul {
   background-color: rgba(93, 88, 240, 1);
 }
 
+/* Footer */
+
+footer{
+  background-color: rgba(1, 172, 253, 1);
+  color: #FFFFFF;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 128px 227px 169px 141px;
+}
+
+.logo-container{
+  display: flex;
+  font-size: 40px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.logo-container h4{
+  line-height: 0.9;
+}
+
+.footer-description{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 400px;
+}
+
+.footer-description p{
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.footer-link h2{
+  margin-bottom: 2rem;
+}
+
+.footer-social{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-social h2{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.footer-social-img{
+  display: flex;
+  gap: 10px;
+}
+
 @media screen and (max-width: 576px) {
   .container{
     max-width: 357px;
   }
   .section-padding{
     padding: 40px 0px;
-  }
-  .section-margin{
-    margin: 0;
   }
   /* Navbar */
   .navbar h3,.nav-link,.navbar button{
@@ -393,8 +464,39 @@ ul {
     left: 10%;
     top: 35%;
   }
-}
 
-.hidden{
-  display: none;
+  .story-card2 h4,.story-card3 h4,.story-card4 h4,.story-card5 h4{
+    font-size: 9px;
+    font-weight: bold;
+    margin: 25px 42px 20px 22px;
+  }
+
+  .card-span{
+    top: 47%;
+  }
+
+  /* Footer */
+
+  .footer-content{
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 15px 64px 20px;
+  }
+
+  .footer-description{
+    gap: 22px;
+    max-width: 357px;
+  }
+
+  .footer-description p{
+    font-size: 16px;
+  }
+
+  .footer-link h2{
+    margin-bottom: 27px;
+  }
+
+  .footer-links{
+    gap: 17px;
+  }
 }
