@@ -279,6 +279,7 @@ main{
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   position: relative;
+  background-color: #FFFFFF;
 }
 
 .card-span{
